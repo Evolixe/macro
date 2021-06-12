@@ -1,0 +1,84 @@
+VER 3 0100000000000017 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:ctrl, @arena1] Gouge
+/cast [mod:shift, @arena2] Gouge
+/cast [mod:alt, @arena3][] Gouge
+END
+VER 3 0100000000000015 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod: ctrl, @arena1] Blind
+/cast [mod: shift, @arena2] Blind
+/cast [mod: alt, @arena3][] Blind
+END
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip [nocombat] stealth; kick
+/cast [nocombat] stealth
+/cast [mod:shift, @focus][@mouseover, harm, nodead][combat] kick
+END
+VER 3 010000000000001F " " "INV_MISC_QUESTIONMARK"
+#showtooltip Pistol Shot
+/cast [nocombat, nostealth] stealth
+/cast Pistol Shot
+/stopattack [nocombat]
+END
+VER 3 0100000000000020 " " "INV_MISC_QUESTIONMARK"
+#show [talent:3/3] Marked for Death; Spiritual Healing Potion
+/use [@mouseover, harm, nodead][][talent:3/3] Marked for Death
+END
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Grappling Hook
+/cancelaura Killing Spree
+/use [@cursor] Grappling Hook
+END
+VER 3 0100000000000018 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Kick
+/cast [@focus] Kick
+END
+VER 3 0100000000000022 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt] Ghostly Strike; Between the Eyes
+END
+VER 3 0100000000000023 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover, harm, nodead][] Serrated Bone Spike
+END
+VER 3 0100000000000024 " " "INV_MISC_QUESTIONMARK"
+#showtooltip sprint
+/cancelaura killing spree
+/cast sprint
+END
+VER 3 0100000000000025 " " "INV_MISC_QUESTIONMARK"
+#showtooltip sinister strike
+/cast [nocombat, nostealth] stealth
+/cast sinister strike
+/stopattack [nocombat]
+END
+VER 3 0100000000000026 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast blade flurry
+/cast stealth
+END
+VER 3 0100000000000027 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt] Crimson Tempest; Envenom
+END
+VER 3 0100000000000028 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@mouseover, harm, nodead][] Poisoned Knife
+END
+VER 3 0100000000000016 " Are1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1] Sap
+END
+VER 3 0100000000000014 " Are1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1] Kidney Shot
+END
+VER 3 0100000000000004 "Are1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1] Cheap Shot
+END
+VER 3 0100000000000019 "Are2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2] Cheap Shot
+END
