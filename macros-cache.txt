@@ -1,84 +1,183 @@
-VER 3 0100000000000017 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:ctrl, @arena1] Gouge
-/cast [mod:shift, @arena2] Gouge
-/cast [mod:alt, @arena3][] Gouge
+VER 3 0000000000000002 " " "INV_Misc_QuestionMark"
+#showtooltip Tricks of the Trade
+/cast [@mouseover, exists] tricks of the trade
+/cast [@focus, exists, help] tricks of the trade
+/cast [@Party1, exists] tricks of the trade
+/cancelaura Blessing of protection
 END
-VER 3 0100000000000015 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod: ctrl, @arena1] Blind
-/cast [mod: shift, @arena2] Blind
-/cast [mod: alt, @arena3][] Blind
+VER 3 000000000000000D " " "INV_Misc_QuestionMark"
+#showtooltip shadowstep
+/cast shadowstep
+/cast kidney shot
 END
-VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip [nocombat] stealth; kick
+VER 3 0000000000000011 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@focus] kick
+END
+VER 3 0000000000000012 " " "INV_Misc_QuestionMark"
+#showtooltip [mod:alt] Cheap shot; eviscerate
+/stopattack [nocombat]
+/cast [nocombat, nostealth] stealth
+/cast [mod:alt] Cheap shot; eviscerate
+/stopattack [nocombat]
+END
+VER 3 0000000000000014 " " "INV_Misc_QuestionMark"
+#showtooltip [mod:alt] Distract; revealing strike
 /cast [nocombat] stealth
-/cast [mod:shift, @focus][@mouseover, harm, nodead][combat] kick
-END
-VER 3 010000000000001F " " "INV_MISC_QUESTIONMARK"
-#showtooltip Pistol Shot
-/cast [nocombat, nostealth] stealth
-/cast Pistol Shot
 /stopattack [nocombat]
+/startattack [nomod]
+/cast [mod:alt] Distract; [combat] revealing strike
+/script UIErrorsFrame:Clear()
 END
-VER 3 0100000000000020 " " "INV_MISC_QUESTIONMARK"
-#show [talent:3/3] Marked for Death; Spiritual Healing Potion
-/use [@mouseover, harm, nodead][][talent:3/3] Marked for Death
-END
-VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Grappling Hook
-/cancelaura Killing Spree
-/use [@cursor] Grappling Hook
-END
-VER 3 0100000000000018 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Kick
-/cast [@focus] Kick
-END
-VER 3 0100000000000022 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000016 " " "INV_Misc_QuestionMark"
 #showtooltip
-/cast [mod:alt] Ghostly Strike; Between the Eyes
+/startattack
+/cast [mod:alt] kick; eviscerate
 END
-VER 3 0100000000000023 " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000000001B " " "INV_Misc_QuestionMark"
+#showtooltip Felsteel Annihilator
+/cast [nomod] abyssal seahorse
+/cast [nomod] Felsteel Annihilator
+/cast [Mod:alt] vicious war wolf
+/script UIErrorsFrame:Clear()
+END
+VER 3 0000000000000023 " " "INV_Misc_QuestionMark"
+#showtooltip blind
+/cast [@mouseover,exists][] Blind
+END
+VER 3 0000000000000026 " " "INV_Misc_QuestionMark"
 #showtooltip
-/use [@mouseover, harm, nodead][] Serrated Bone Spike
+/cast [mod:shift, @focus] kidney shot; kidney shot
 END
-VER 3 0100000000000024 " " "INV_MISC_QUESTIONMARK"
-#showtooltip sprint
-/cancelaura killing spree
-/cast sprint
+VER 3 0000000000000028 " " "INV_Misc_QuestionMark"
+#showtooltip Vicious war steed
+/cast [nomod] abyssal seahorse
+/cast [nomod] Felsteel Annihilator
+/cast [Mod:alt] Vicious war steed
+/console SET cameraDIstanceMaxFactor 2.6
 END
-VER 3 0100000000000025 " " "INV_MISC_QUESTIONMARK"
-#showtooltip sinister strike
-/cast [nocombat, nostealth] stealth
-/cast sinister strike
-/stopattack [nocombat]
+VER 3 000000000000002E " " "INV_Misc_QuestionMark"
+#showtooltip [nocombat] Ethereal Pomegranate; [combat] healthstone
+/use [combat] healthstone
+/use [nocombat] Conjured Mana Bun
+/use [nocombat] Ethereal Pomegranate
 END
-VER 3 0100000000000026 " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000000002F " " "INV_Misc_QuestionMark"
 #showtooltip
-/cast blade flurry
-/cast stealth
+/castsequence [mod:alt, @focus, stance:0/2] reset=1 Shadowstep, Kick
+/castsequence [mod:alt, @focus, stance:1/3] reset=1 Shadowstep, Sap
+/castsequence [stance:1/3] reset=1 Shadowstep, Sap
+/castsequence [stance:0/2] reset=1 Shadowstep, Kick
 END
-VER 3 0100000000000027 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:alt] Crimson Tempest; Envenom
+VER 3 0000000000000038 " " "INV_MISC_QUESTIONMARK"
+#showtooltip pick pocket
+/targetenemy
+/cast pick pocket
+/cleartarget
 END
-VER 3 0100000000000028 " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000000003F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use [@mouseover, harm, nodead][] Poisoned Knife
+/cancelaura Blessing of Protection
+/cast [@mouseover, exists, noharm][] Blessing of Protection
 END
-VER 3 0100000000000016 " Are1" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000040 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@arena1] Sap
+/cast [stance:0] Shadow Dance
+/cast [@focus] Shadowstep
+/cast [@focus, harm][stance] Sap
 END
-VER 3 0100000000000014 " Are1" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000042 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@arena1] Kidney Shot
+/cast [@mouseover, noharm, exists][] Blessing of Freedom
 END
-VER 3 0100000000000004 "Are1" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@arena1] Cheap Shot
+VER 3 0000000000000043 " " "INV_MISC_QUESTIONMARK"
+#showtooltip [nocombat] Ethereal Pomegranate; [combat] Spiritual Healing Potion
+/use [combat] Spiritual Healing Potion
+/use [nocombat] Conjured Mana Bun
+/use [nocombat] Ethereal Pomegranate
 END
-VER 3 0100000000000019 "Are2" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000052 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@arena2] Cheap Shot
+/cast [mod:alt] Rebuke; Consecration
+END
+VER 3 0000000000000054 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, exists][@evolx] Greater Blessing of Wisdom
+END
+VER 3 0000000000000056 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance] Shadowstrike; Backstab
+END
+VER 3 0000000000000057 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Symbols of Death
+/use 14
+/use Symbols of Death
+END
+VER 3 0000000000000058 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Cheap Shot
+/use Cold Blood
+/use Cheap Shot
+END
+VER 3 0000000000000059 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 14
+END
+VER 3 000000000000005B " " "INV_MISC_QUESTIONMARK"
+#show
+/use 13
+END
+VER 3 000000000000005C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Sap
+/cleartarget
+/targetenemyplayer
+/cast sap
+END
+VER 3 000000000000005A " " "INV_MISC_QUESTIONMARK"
+#show [talent:7/2] Blade Rush; [talent:7/3] Killing Spree
+/use [talent:7/2] Blade Rush; [talent:7/3] Killing Spree
+/use 13
+END
+VER 3 000000000000005D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stealth] Garrote; Mutilate
+END
+VER 3 000000000000005E " " "INV_MISC_QUESTIONMARK"
+#show Serrated Bone Spike
+/cleartarget
+/tar Stone Legion Skirmisher
+/tar Stone Legion Commando
+END
+VER 3 000000000000005F " " "INV_MISC_QUESTIONMARK"
+#show slice and dice
+/cancelaura slice and dice
+/use slice and dice
+END
+VER 3 0000000000000060 " " "INV_MISC_QUESTIONMARK"
+#show 13
+/use [@evolixe] 13
+END
+VER 3 0000000000000061 " " "INV_MISC_QUESTIONMARK"
+#show
+/cast [mouseover, harm][] garrote
+END
+VER 3 0000000000000062 " " "INV_MISC_QUESTIONMARK"
+#show
+/cast [mouseover, harm][] rupture
+END
+VER 3 0000000000000063 " " "135426"
+/attack [@mouseover]
+END
+VER 3 0000000000000064 " " "INV_MISC_QUESTIONMARK"
+#show
+/use vanish
+/use 13
+END
+VER 3 0000000000000037 " Sap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:0] Shadow Dance
+/cast [@focus, harm][stance] Sap
+END
+VER 3 000000000000001E "Focus" "458724"
+/clearfocus
+/focus [@mouseover, exists]
 END
